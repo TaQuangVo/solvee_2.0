@@ -1,0 +1,106 @@
+.background {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+.figuresWraper {
+  width: 60%;
+  height: 100%;
+  position: relative;
+}
+.lillaCirkel {
+  width: 8rem;
+  fill: url(#lilla-linear-gradient);
+  position: absolute;
+  top: 55%;
+  right: 50%;
+  transform: rotate(35deg);
+  -webkit-filter: drop-shadow(-7px 3px 10px rgba(152, 37, 156, 0.3));
+  filter: drop-shadow(-7px 7px 10px rgba(134, 31, 138, 0.3));
+}
+.yellowCirkel {
+  width: 7rem;
+  fill: url(#yellow-linear-gradient);
+  position: absolute;
+  top: 20%;
+  right: 70%;
+  transform: rotate(-35deg);
+}
+.orangeCirkel {
+  width: 5rem;
+  fill: url(#yellow-full-linear-gradient);
+  position: absolute;
+  top: 30%;
+  right: 40%;
+  transform: rotate(35deg);
+}
+.redCirkel {
+  width: 12rem;
+  fill: url(#red-full-linear-gradient);
+  position: absolute;
+  top: 60%;
+  right: 10%;
+  transform: rotate(35deg);
+}
+.blueTriangle {
+  width: 250px;
+  fill: url(#blue-linear-gradient);
+  position: absolute;
+  top: 65%;
+  right: 75%;
+}
+.blueSquare {
+  width: 6rem;
+  fill: url(#blue-square-linear-gradient);
+  position: absolute;
+  top: 20%;
+  right: 15%;
+  transform: rotate(-35deg);
+}
+
+/*content*/
+.content {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.backDevIcon {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  transform: translate(-250px, 100px) rotate(10deg);
+}
+.backDevIcon h4 {
+  font-family: "Rubik", sans-serif;
+  font-size: 34rem;
+  color: rgba(233, 233, 233, 0.212);
+}
+.sectionText {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 250px;
+}
+.sectionText h1 {
+  font-size: 6rem;
+  color: rgb(38, 64, 99);
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  letter-spacing: 5px;
+}
+.sectionText h1:nth-child(1) {
+  color: #ff767f;
+}

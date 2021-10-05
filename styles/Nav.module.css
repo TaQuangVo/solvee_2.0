@@ -1,0 +1,190 @@
+.container {
+  position: absolute;
+  z-index: 99;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  background-color: rgba(255, 255, 255, 0.178);
+  border-bottom: solid 1px white;
+}
+.contentWraper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6rem;
+}
+.containerBackdrop::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.671);
+  backdrop-filter: blur(15px);
+}
+.logo {
+  position: relative;
+  display: flex;
+}
+.logo h2 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.logo span {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #ff767f;
+}
+.icons {
+  display: flex;
+  align-items: center;
+}
+.contactIcon {
+  width: 2rem;
+  opacity: 0.7;
+}
+.divider {
+  width: 0.2rem;
+  height: 0.2rem;
+  transform: rotate(45deg);
+  background-color: #ff767f;
+  margin: 0 1.5rem;
+}
+.hambuger {
+  width: 1.7rem;
+  height: 0.22rem;
+  position: relative;
+}
+.hambuger::before {
+  content: "";
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: -120%;
+  border-radius: 0.175rem;
+  background-color: rgba(0, 0, 0, 0.664);
+}
+.hambuger::after {
+  content: "";
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  bottom: -120%;
+  border-radius: 0.175rem;
+  background-color: rgba(0, 0, 0, 0.685);
+}
+
+/*slide in*/
+.slideIn {
+  width: 450px;
+  max-width: 90vw;
+  height: 800px;
+  max-height: 80vh;
+  position: absolute;
+  top: 10vh;
+  right: 5vw;
+  display: flex;
+  flex-direction: column;
+}
+.navBackdrop::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(233, 233, 233, 0.295);
+  border-radius: 1.5rem;
+  border: solid 1px white;
+  backdrop-filter: blur(15px);
+}
+.navHeader {
+  position: relative;
+  z-index: 3;
+  height: 5rem;
+  width: 100%;
+}
+.navBody {
+  position: relative;
+  z-index: 3;
+  flex-grow: 1;
+}
+.navFooter {
+  position: relative;
+  z-index: 3;
+  height: 5rem;
+  width: 100%;
+}
+
+/*slide in content*/
+.navHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10%;
+}
+.navHeader span {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: rgb(87, 87, 87);
+}
+.navHeader div {
+  width: 1.1rem;
+  height: 0.13rem;
+  position: relative;
+}
+.navHeader div::before {
+  content: "";
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: -0%;
+  border-radius: 0.175rem;
+  background-color: rgb(58, 58, 58);
+  transform-origin: center center;
+  transform: rotate(45deg);
+}
+.navHeader div::after {
+  content: "";
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  bottom: 0%;
+  border-radius: 0.175rem;
+  background-color: rgb(110, 110, 110);
+  transform-origin: center;
+  transform: rotate(-45deg);
+}
+.linkWraper {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10%;
+}
+.linkWraper a {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.1rem;
+  margin: 0.7rem 0;
+  color: rgb(66, 66, 66);
+}
+.linkWraper a:nth-child(1) {
+  color: #ff767f;
+}
+.navFooter {
+  display: flex;
+  align-items: center;
+  padding: 10%;
+}
+.mediaIcon {
+  width: 1.1rem;
+  margin-right: 1rem;
+  opacity: 0.6;
+}
